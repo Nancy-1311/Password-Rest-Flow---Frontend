@@ -10,7 +10,7 @@ function ResetPassword() {
   const [loading, setLoading] = useState(false);
 
   const submitHandler = async () => {
-    // ✅ Password validation
+    //  Password validation
     if (password.length < 6) {
       return alert("Password must be at least 6 characters");
     }
@@ -25,7 +25,7 @@ function ResetPassword() {
 
       alert("Password updated successfully");
 
-      // ✅ Redirect after success
+      //  Redirect after success
       navigate("/");
     } catch (err) {
       alert(err.response?.data?.message || "Link expired or invalid");
